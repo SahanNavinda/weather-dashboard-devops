@@ -4,8 +4,8 @@
 
 | Student Name | Student ID | Role |
 |--------------|------------|------|
-| Sahan Navinda | ITBNM-2211-XXXX | Full Stack Developer & DevOps |
-| Aasara Navoda | ITBNM-2211-XXXX | Code Reviewer & Collaborator |
+| Sahan Navinda | ITBNM-2211-XXXX | DevOps Engineer |
+| Aasara Navoda | ITBNM-2211-XXXX | Full Stack Developer |
 
 ---
 
@@ -13,7 +13,7 @@
 
 Weather Dashboard DevOps is a responsive web application developed using Node.js, Express.js, HTML, CSS, and JavaScript. The application retrieves real-time weather information from the OpenWeather API and displays current weather conditions for any city entered by the user.
 
-The project demonstrates Git Flow branching, Pull Requests, code reviews, GitHub Actions Continuous Integration (CI), Continuous Deployment (CD), and cloud deployment using Render.
+The project demonstrates collaborative software development using the Git Flow branching strategy together with GitHub Pull Requests, code reviews, GitHub Actions for Continuous Integration (CI), Continuous Deployment (CD), and cloud deployment using Render.
 
 ---
 
@@ -84,26 +84,33 @@ This project follows the Git Flow branching model.
 
 # 👨‍💻 Individual Contributions
 
-## Sahan Navinda
+## Sahan Navinda (DevOps Engineer)
 
-- Designed and developed the Weather Dashboard UI
-- Implemented Express.js backend
-- Integrated OpenWeather API
-- Configured GitHub Actions CI
-- Created deployment workflow
-- Configured Render deployment
-- Managed Pull Requests
-- Implemented Git Flow
-- Resolved merge conflicts
+- Created and managed the GitHub repository
+- Implemented Git Flow branching strategy
+- Created and managed feature branches
+- Created Pull Requests and managed merge process
+- Configured branch protection rules
+- Configured GitHub Actions Continuous Integration (`ci.yml`)
+- Configured GitHub Actions Continuous Deployment (`deploy.yml`)
+- Deployed the application using Render
+- Configured environment variables for deployment
+- Resolved dependency and deployment issues
+- Performed merge conflict creation and resolution
+
 
 ---
 
-## Aasara Navoda
+## Aasara Navoda (Full Stack Developer)
 
-- Reviewed Pull Requests
-- Approved code changes
-- Assisted with testing
-- Verified deployments
+- Designed and developed the Weather Dashboard
+- Implemented the Express.js backend
+- Integrated the OpenWeather API
+- Developed the frontend user interface
+- Implemented weather search functionality
+- Developed live weather information display
+- Tested application functionality
+- Reviewed and approved Pull Requests
 
 ---
 
@@ -144,19 +151,19 @@ OPENWEATHER_API_KEY=YOUR_API_KEY
 
 ## Run Project
 
-Development
+Development mode
 
 ```bash
 npm run dev
 ```
 
-Production
+Production mode
 
 ```bash
 npm start
 ```
 
-Open
+Open your browser and visit:
 
 ```
 http://localhost:3000
@@ -168,14 +175,14 @@ http://localhost:3000
 
 1. Create a feature branch.
 2. Develop the feature.
-3. Commit changes.
-4. Push to GitHub.
-5. Create a Pull Request.
+3. Commit and push changes.
+4. Create a Pull Request.
+5. GitHub Actions CI workflow runs automatically.
 6. Code review and approval.
 7. Merge into **develop**.
-8. Create Release Pull Request to **main**.
-9. GitHub Actions CI executes.
-10. Render automatically deploys the application.
+8. Create a Release Pull Request to **main**.
+9. GitHub Actions deployment workflow executes.
+10. Render automatically deploys the latest version.
 
 ---
 
@@ -187,71 +194,37 @@ The application required fetching live weather information from the OpenWeather 
 
 **Solution**
 
-Used Axios with asynchronous JavaScript (`async/await`) to retrieve and display weather data.
+Used Axios with asynchronous JavaScript (`async/await`) to retrieve and display weather information.
 
 ---
 
 ### Environment Variables
 
-The API key was not detected during deployment.
+The OpenWeather API key was not detected during deployment.
 
 **Solution**
 
-Configured environment variables correctly using `.env` for local development and Render Environment Variables for deployment.
+Configured environment variables correctly using a local `.env` file and Render Environment Variables.
 
 ---
 
-### Deployment Error
+### Deployment Issues
 
-Render deployment initially failed due to missing dependencies.
+Initial deployment failed because required dependencies were missing.
 
 **Solution**
 
-Updated `package.json`, committed dependency changes, and redeployed successfully.
+Updated `package.json`, regenerated `package-lock.json`, and redeployed the application successfully.
 
 ---
 
-# 📷 Screenshots
+### Merge Conflict Resolution
 
-## Home Page
+An intentional merge conflict was created and resolved to demonstrate collaborative Git workflows.
 
-(Add Screenshot)
+**Solution**
 
----
-
-## Search Weather
-
-(Add Screenshot)
-
----
-
-## Current Weather
-
-(Add Screenshot)
-
----
-
-## Live Conditions
-
-(Add Screenshot)
-
----
-
-## GitHub Actions
-
-(Add Screenshot)
-
----
-
-## Pull Request Approval
-
-(Add Screenshot)
-
----
-
-## Render Deployment
-
-(Add Screenshot)
+Both developers modified the same file, resolved the conflict manually, committed the changes, and successfully completed the merge.
 
 ---
 
@@ -275,8 +248,8 @@ weather-dashboard-devops
 ├── app.js
 ├── package.json
 ├── package-lock.json
-├── .env
-└── README.md
+├── README.md
+└── .env (not committed)
 ```
 
 ---
@@ -287,7 +260,7 @@ weather-dashboard-devops
 - Hourly weather forecast
 - Air Quality Index
 - GPS location detection
-- Dark / Light mode
+- Dark / Light theme
 - Favorite cities
 - Weather alerts
 
@@ -295,7 +268,7 @@ weather-dashboard-devops
 
 # 📄 License
 
-This project was developed for academic purposes as part of the Advanced DevOps Team Collaboration Assignment.
+This project was developed for academic purposes as part of the **Advanced DevOps Team Collaboration Assignment**.
 
 ---
 

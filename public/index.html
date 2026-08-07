@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <div>
+
+            <h1>☁ Weather Dashboard</h1>
+
+            <p id="dateTime"></p>
+
+        </div>
+
+    </header>
+
+    <!-- SEARCH BAR -->
+
+    <section class="search-section">
+
+        <input
+            type="text"
+            id="city"
+            placeholder="Search City...">
+
+        <button id="searchBtn">
+
+            Search
+
+        </button>
+
+    </section>
+
+
+    <!-- MAIN GRID -->
+
+    <main class="content">
+
+
+        <!-- LEFT SIDE -->
+
+        <section class="left-panel">
+
+            <!-- CURRENT WEATHER -->
+
+            <div class="card current-weather">
+
+                <h2>Current Weather</h2>
+
+                <div id="weatherResult">
+
+                    <div class="weather-top">
+
+                        <div>
+
+                            <h1 id="temperature">--°</h1>
+
+                            <h2 id="cityName">
+
+                                City Name
+
+                            </h2>
+
+                            <p id="description">
+
+                                Weather Description
+
+                            </p>
+
+                        </div>
+
+                        <img
+                            id="weatherIcon"
+                            src=""
+                            alt="Weather">
+
+                    </div>
+
+                    <div class="weather-details">
+
+                        <div class="detail-box">
+
+                            <span>Humidity</span>
+
+                            <h3 id="humidity">
+
+                                --
+
+                            </h3>
+
+                        </div>
+
+                        <div class="detail-box">
+
+                            <span>Wind</span>
+
+                            <h3 id="wind">
+
+                                --
+
+                            </h3>
+
+                        </div>
+
+                        <div class="detail-box">
+
+                            <span>Feels Like</span>
+
+                            <h3 id="feelsLike">
+
+                                --
+
+                            </h3>
+
+                        </div>
+
+                        <div class="detail-box">
+
+                            <span>Pressure</span>
+
+                            <h3 id="pressure">
+
+                                --
+
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- HOURLY -->
+
+            <div class="card">
+
+                <h2>Hourly Forecast</h2>
+
+                <div
+                    id="hourlyForecast"
+                    class="forecast-row">
+
+                </div>
+
+            </div>
+
+
+            <!-- WEEKLY -->
+
+            <div class="card">
+
+                <h2>Weekly Forecast</h2>
+
+                <div
+                    id="weeklyForecast"
+                    class="forecast-row">
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- RIGHT SIDE -->
+
+        <aside class="right-panel">
+
+            <div class="card">
+
+                <h2>Live Conditions</h2>
+
+                <div id="liveConditions">
+
+    <div class="condition-grid">
+
+        <div class="condition-box">
+            <span>💧 Humidity</span>
+            <h3 id="liveHumidity">--%</h3>
+        </div>
+
+        <div class="condition-box">
+            <span>🌬 Wind</span>
+            <h3 id="liveWind">-- m/s</h3>
+        </div>
+
+        <div class="condition-box">
+            <span>🌡 Feels Like</span>
+            <h3 id="liveFeels">--°</h3>
+        </div>
+
+        <div class="condition-box">
+            <span>📈 Pressure</span>
+            <h3 id="livePressure">-- hPa</h3>
+        </div>
+
+        <div class="condition-box">
+            <span>👁 Visibility</span>
+            <h3 id="visibility">-- km</h3>
+        </div>
+
+        <div class="condition-box">
+            <span>🌅 Sunrise</span>
+            <h3 id="sunrise">--</h3>
+        </div>
+
+        <div class="condition-box">
+            <span>🌇 Sunset</span>
+            <h3 id="sunset">--</h3>
+        </div>
+
+    </div>
+    
+
+</div>
+
+
+
+            </div>
+
+
+            <div class="card">
+
+                <h2>Recent Searches</h2>
+
+                <ul id="recentList">
+
+                </ul>
+
+            </div>
+
+            <div class="card">
+
+   
+
+
+        </aside>
+
+    </main>
+
+</div>
+
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
+

@@ -1,5 +1,7 @@
 # 🌦️ Weather Dashboard DevOps
 
+![CI](https://github.com/SahanNavinda/weather-dashboard-devops/actions/workflows/ci.yml/badge.svg)
+
 ## 👥 Group Information
 
 | Student Name | Student ID | Role |

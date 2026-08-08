@@ -556,4 +556,228 @@ body{
     color:#222;
 }
 
+/* =========================================
+   MOBILE RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    /* Main dashboard */
+    .dashboard {
+        width: 100%;
+        padding: 20px 14px;
+        box-sizing: border-box;
+    }
+
+    /* Header */
+    .header {
+        padding: 10px 0 20px;
+    }
+
+    .header h1 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .header p {
+        font-size: 14px;
+    }
+
+    /* Search section */
+    .search-section {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .search-section input {
+        width: 100%;
+        box-sizing: border-box;
+        height: 48px;
+    }
+
+    .search-section button {
+        width: 100%;
+        height: 48px;
+    }
+
+    /* Main content */
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    /* Left and right panels */
+    .left-panel,
+    .right-panel {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Cards */
+    .card {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px;
+        margin-bottom: 18px;
+    }
+
+    .card h2 {
+        font-size: 24px;
+    }
+
+    /* Current weather */
+    .weather-top {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .weather-top h1 {
+        font-size: 64px;
+    }
+
+    .weather-top h2 {
+        font-size: 30px;
+    }
+
+    .weather-top p {
+        font-size: 16px;
+    }
+
+    #weatherIcon {
+        width: 90px;
+        height: 90px;
+        align-self: flex-start;
+    }
+
+    /* Weather details */
+    .weather-details {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .weather-details > div {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Live conditions */
+    #liveConditions {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    /* Forecast containers */
+    .forecast-scroll {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding-bottom: 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Forecast cards */
+    .hour-card,
+    .day-card {
+        min-width: 105px;
+        max-width: 105px;
+        flex: 0 0 105px;
+        box-sizing: border-box;
+        padding: 12px 8px;
+        text-align: center;
+    }
+
+    .hour-card h4,
+    .day-card h4 {
+        font-size: 14px;
+        margin: 5px 0;
+    }
+
+    .hour-card img,
+    .day-card img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .hour-card p,
+    .day-card p {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    /* Recent searches */
+    #recentList {
+        padding: 0;
+        margin: 0;
+    }
+
+    #recentList li {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 12px;
+        margin-bottom: 8px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL PHONES
+   ========================================= */
+
+@media (max-width: 480px) {
+
+    .dashboard {
+        padding: 15px 10px;
+    }
+
+    .header h1 {
+        font-size: 27px;
+    }
+
+    .card {
+        padding: 16px;
+        border-radius: 16px;
+    }
+
+    .card h2 {
+        font-size: 21px;
+    }
+
+    .weather-top h1 {
+        font-size: 55px;
+    }
+
+    .weather-top h2 {
+        font-size: 25px;
+    }
+
+    #weatherIcon {
+        width: 75px;
+        height: 75px;
+    }
+
+    .hour-card,
+    .day-card {
+        min-width: 95px;
+        max-width: 95px;
+        flex-basis: 95px;
+    }
+
+    .hour-card img,
+    .day-card img {
+        width: 45px;
+        height: 45px;
+    }
+
+}
+
 

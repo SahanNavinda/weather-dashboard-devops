@@ -1,11 +1,13 @@
 # 🌦️ Weather Dashboard DevOps
 
+![CI](https://github.com/SahanNavinda/weather-dashboard-devops/actions/workflows/ci.yml/badge.svg)
+
 ## 👥 Group Information
 
 | Student Name | Student ID | Role |
 |--------------|------------|------|
-| Sahan Navinda | ITBNM-2211-XXXX | DevOps Engineer |
-| Aasara Navoda | ITBNM-2211-XXXX | Full Stack Developer |
+| D S N Vitharana | ITBIN-2211-0312 | DevOps Engineer |
+| R M A Navoda | ITBIN-2211-0240 | Full Stack Developer |
 
 ---
 
@@ -21,7 +23,7 @@ The project demonstrates collaborative software development using the Git Flow b
 
 **Live URL**
 
-https://weather-dashboard-devops-8mlz.onrender.com
+https://weather-dashboard-devops-8m1z.onrender.com/
 
 ---
 

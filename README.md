@@ -4,8 +4,8 @@
 
 | Student Name | Student ID | Role |
 |--------------|------------|------|
-| Sahan Navinda | ITBNM-2211-0312 | DevOps Engineer |
-| Aasara Navoda | ITBNM-2211-0240 | Full Stack Developer |
+| D S N Vitharana | ITBIN-2211-0312 | DevOps Engineer |
+| R M A Navoda | ITBIN-2211-0240 | Full Stack Developer |
 
 ---
 
